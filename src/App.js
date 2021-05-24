@@ -19,7 +19,6 @@ function App() {
 
   const updateBooks = () => {
     console.log('updateed')
-    const apiUrl = 'api/books';
     axios.get('/api/books')
       .then(res => {
         setAppState({ loading: false, books: res.data });
