@@ -18,7 +18,6 @@ function App() {
   }, [setAppState]);
 
   const updateBooks = () => {
-    console.log('updateed')
     axios.get('/api/books')
       .then(res => {
         setAppState({ loading: false, books: res.data });
@@ -27,7 +26,6 @@ function App() {
   }
 
   const selectExistingBook = (id) => {
-    console.log(id)
     setAppState({
       ...appState,
       currentBookId: id

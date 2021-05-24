@@ -23,7 +23,6 @@ function BookForm(props) {
 
   const handleChange = (e) => {
     const value = e.target.value;
-    console.log(e.target.value)
     setItem({
       ...item,
       [e.target.name]: value

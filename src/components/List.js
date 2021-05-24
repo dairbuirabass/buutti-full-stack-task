@@ -8,7 +8,6 @@ const List = (props) => {
     axios.delete(`api/book/${id}`)
       .then(res => {
         onDelete()
-        console.log('Deleted')
       })
       .catch(console.log)
   }
